@@ -26,9 +26,9 @@ Can ML models accurately predict accident severity using weather, time, and loca
 
 # Dataset
 
-** Source: NYC Motor Vehicle Collisions – Crashes (Data.gov)
+Source: NYC Motor Vehicle Collisions – Crashes (Data.gov)
 
-** Records: ~1.4 million observations (2016–Present)
+Records: ~1.4 million observations (2016–Present)
 # Key Columns Used:
 
 crash_date, borough, zip_code, latitude, longitude
@@ -57,27 +57,27 @@ Feature Engineering – Created a binary target variable serious_accident (True 
 
 Visualizations were used to explore accident trends across weather and time.
 
-** 1. Accident Severity Distribution
+1. Accident Severity Distribution
 
 Shows the imbalance between serious and non-serious crashes.
 
 sns.countplot(x='serious_accident', data=accident_data_cleaned)
 
-** 2. Borough-wise Accident Distribution
+2. Borough-wise Accident Distribution
 
 Compares accident counts across NYC boroughs (Brooklyn, Queens, Bronx, Manhattan, Staten Island).
 → Brooklyn and Queens show the highest accident frequencies.
 
-** 3. Time Period Analysis
+3. Time Period Analysis
 
 Visualizes how crashes vary by rush hours vs. off-hours peak times (12–3 PM, 3–6 PM) have higher frequencies.
 
-** 4. Correlation Heatmap
+4. Correlation Heatmap
 
 Analyzes relationships among numeric columns like number_of_injuries, number_of_deaths, and precipitation.
 → Positive correlation between injuries and deaths; weak correlation with precipitation.
 
-** 5. Weather Impact on Severity
+5. Weather Impact on Severity
 
 Shows which weather conditions contribute to higher accident severity.
 → Conditions involving rain, fog, and snow correspond to higher proportions of serious crashes.
@@ -124,7 +124,7 @@ F1 Score
 
 # Confusion Matrix
 
-** Cross-validation for model robustness
+Cross-validation for model robustness
 
 Random Forest outperformed Logistic Regression in identifying serious accidents but both models struggled due to class imbalance, highlighting the need for resampling (SMOTE/oversampling) in future work.
 
@@ -142,10 +142,10 @@ Logistic Regression underperformed due to skewed data; Random Forest showed more
 
 # Tech Stack
 
-** Language: Python
-** Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn
-** Environment: Jupyter Notebook / VS Code
-** Dataset: NYC DOT / NYPD Open Data Portal
+Language: Python
+Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn
+Environment: Jupyter Notebook / VS Code
+Dataset: NYC DOT / NYPD Open Data Portal
 
 # Conclusion
 
